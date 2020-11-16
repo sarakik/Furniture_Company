@@ -11,10 +11,12 @@
 |
 */
 Route::get('/','PageController@index')->name('index');
-Route::get('/services','PageController@services')->name('services');
-Route::get('/catalogue','PageController@catalogue')->name('catalogue');
-Route::get('/contacts','PageController@contacts')->name('contacts');
-Route::get('/pricing','PageController@pricing')->name('pricing');
+Route::get('/about','PageController@about')->name('about');
+Route::get('/catalog','PageController@catalog')->name('catalog');
+Route::get('/contact','PageController@contact')->name('contact');
+Route::get('/elements','PageController@elements')->name('elements');
+Route::get('/elements2','PageController@elements2')->name('elements2');
+Route::get('/blog_home','PageController@blog_home')->name('blog_home');
 
 Auth::routes();
 

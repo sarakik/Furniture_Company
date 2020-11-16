@@ -1,168 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Interior Design | Catalogue</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-<script src="js/jquery-1.6.2.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jcarousellite_1.0.1.js"></script>
-<script src="js/jquery.galleriffic.js"></script>
-<script src="js/jquery.opacityrollover.js"></script>
-<script>
-$(document).ready(function () {
-    $(".jCarouselLite").jCarouselLite({
-        btnNext: ".next",
-        btnPrev: ".prev",
-        speed: 400,
-        vertical: false,
-        circular: true,
-        easing: 'easeOutQuart',
-        visible: 4,
-        start: 0,
-        scroll: 1
-    });
-});
-</script>
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<![endif]-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Furniture - Home</title>
 
-
-</head>
-<body id="page1">
-<!--==============================header=================================-->
-<header>
-  <div class="row-1">
-    <div class="main">
-      <div class="container_12">
-        <div class="grid_12">
-          <nav>
-            <ul class="menu">
-              <li><a href="{{route('index')}}">About Us</a></li>
-              <li><a href="{{route('services')}}">Services</a></li>
-              <li><a href="{{route('catalogue')}}">Catalogue</a></li>
-              <li><a href="{{route('pricing')}}">Pricing</a></li>
-              <li><a href="{{route('contacts')}}">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="row-2">
-    <div class="main">
-      <div class="container_12">
-        <div class="grid_9">
-          <h1> <a class="logo" href="index.html">Int<strong>e</strong>rior</a> <span>Design</span> </h1>
-        </div>
-        <div class="grid_3">
-          <form id="search-form" action="#" method="post" enctype="multipart/form-data">
-            <fieldset>
-              <div class="search-field">
-                <input name="search" type="text">
-                <a class="search-button" href="#"><span>search</span></a> </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </div>
-</header>
-
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">	
+			<link rel="stylesheet" href="css/owl.theme.default.css">
+			<link rel="stylesheet" href="css/testimonial_carousel.css">		
+			<link rel="stylesheet" href="css/blog.css">	
+			<link rel="stylesheet" href="css/packages.css">
+			<link rel="stylesheet" href="css/main_slider.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body>	
+			<header id="header"><!-- #header -->
+				<div class="header-top">
+					<div class="container">
+			  		<div class="row align-items-center">
+			  			<div class="col-lg-6 col-sm-6 col-6 header-top-left">
+			  				<ul>
+			  					<li><a href="#">Visit Us</a></li>
+			  					<li><a href="#">Buy Tickets</a></li>
+			  				</ul>			
+			  			</div>
+			  			<div class="col-lg-6 col-sm-6 col-6 header-top-right">
+							<div class="header-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>
+							</div>
+			  			</div>
+			  		</div>			  					
+					</div>
+				</div>
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-between d-flex">
+				      
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="{{route('index')}}">Home</a></li>
+				          <li><a href="{{route('about')}}">About</a></li>
+				          <li><a href="{{route('catalog')}}">Catalog</a></li>
+				          <li class="menu-has-children"><a href="">Sections</a>
+				            <ul>
+				            	  <li><a href="{{route('elements2')}}">Living Room</a></li>					
+				            	  <li><a href="{{route('elements')}}">Bed Room</a></li>	
+				            	  <li><a href="{{route('elements')}}">sofa</a></li>	
+				            	  <li><a href="{{route('elements')}}">Kitchen</a></li>	
+				            	  	
+				            	                  		
+				            </ul>
+				          </li>	
+				          <li class="menu-has-children"><a href="">Blog</a>
+				            <ul>
+				              <li><a href="{{route('blog_home')}}">Blog Home</a></li>
+				            </ul>
+				          </li>	
+				     				          					          		          
+				          <li><a href="{{route('contact')}}">Contact</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->					      		  
+					</div>
+				</div>
+			</header><!-- #header -->
+			
 
 @yield('content')
 
 
 
-<!--==============================footer=================================-->
-<footer>
-  <div class="main">
-    <div class="container_12">
-      <div class="wrapper">
-        <div class="grid_4">
-          <div>Copyright &copy; <a href="#">Domain Name</a> All Rights Reserved</div>
-          <div>Design by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></div>
-          <!-- {%FOOTER_LINK} -->
-        </div>
-        <div class="grid_4"> <span class="phone-numb"><span>+1(800)</span> 123-1234</span> </div>
-        <div class="grid_4">
-          <ul class="list-services">
-            <li><a href="#"></a></li>
-            <li><a class="item-2" href="#"></a></li>
-            <li><a class="item-3" href="#"></a></li>
-            <li><a class="item-4" href="#"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script>
-$(window).load(function () {
-    // We only want these styles applied when javascript is enabled
-    $('div.navigation').css({
-        'width': '320px',
-        'float': 'right'
-    });
-    $('div.content').css('display', 'block');
+		<!-- start footer Area -->		
+		<footer class="footer-area">
+			<div class="container">
 
-    // Initially set opacity on thumbs and add
-    // additional styling for hover effect on thumbs
-    var onMouseOutOpacity = 0.5;
-    $('#thumbs ul.thumbs li span').opacityrollover({
-        mouseOutOpacity: onMouseOutOpacity,
-        mouseOverOpacity: 0.0,
-        fadeSpeed: 'fast',
-        exemptionSelector: '.selected'
-    });
+				<div class="row">
+					<div class="col-lg-3  col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h6>Travelish</h6>
+							<p>
+								The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has to understand the message. 
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h6>Navigation Links</h6>
+							<div class="row">
+								<div class="col">
+									<ul>
+										<li><a href="{{route('index')}}">Home</a></li>
+										<li><a href="{{route('about')}}">About</a></li>
+										<li><a href="{{route('catalog')}}">Catalog</a></li>
+										
+									</ul>
+								</div>
+								<div class="col">
+									<ul>
+										
+										<li><a href="{{route('blog_home')}}">Blog</a></li>
+										<li><a href="{{route('contact')}}">Contact</a></li>
+									</ul>
+								</div>										
+							</div>							
+						</div>
+					</div>							
+					<div class="col-lg-3  col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<h6>Newsletter</h6>
+							<p>
+								For business professionals caught between high OEM price and mediocre print and graphic output and to understand the message.								
+							</p>								
+							<div id="mc_embed_signup">
+								<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+																		
+									<div class="mt-10 info"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+										
+				</div>
+			</div>
+		</footer>
+		
+		<div class="copyrights">
+			<div class="container">
+				<div class="row footer-bottom d-flex justify-content-between align-items-center">
+					<p class="col-lg-8 col-sm-12 footer-text m-0">
+						Copyright &copy; All rights reserved.
+					</p>
+					<div class="col-lg-4 col-sm-12 footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- End footer Area -->
 
-    // Initialize Advanced Galleriffic Gallery
-    var gallery = $('#thumbs').galleriffic({
-        delay: 7000,
-        numThumbs: 12,
-        preloadAhead: 6,
-        enableTopPager: false,
-        enableBottomPager: false,
-        imageContainerSel: '#slideshow',
-        controlsContainerSel: '',
-        captionContainerSel: '',
-        loadingContainerSel: '',
-        renderSSControls: true,
-        renderNavControls: true,
-        playLinkText: 'Play Slideshow',
-        pauseLinkText: 'Pause Slideshow',
-        prevLinkText: 'Prev',
-        nextLinkText: 'Next',
-        nextPageLinkText: 'Next',
-        prevPageLinkText: 'Prev',
-        enableHistory: true,
-        autoStart: 7000,
-        syncTransitions: true,
-        defaultTransitionDuration: 900,
-        onSlideChange: function (prevIndex, nextIndex) {
-            // 'this' refers to the gallery, which is an extension of $('#thumbs')
-            this.find('ul.thumbs li span').css({
-                opacity: 0.5
-            })
-        },
-        onPageTransitionOut: function (callback) {
-            this.find('ul.thumbs li span').css({
-                display: 'block'
-            });
-        },
-        onPageTransitionIn: function () {
-            this.find('ul.thumbs li span').css({
-                display: 'none'
-            });
-        }
-    });
-});
-</script>
-</body>
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>			
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
+			<script src="js/jquery-ui.js"></script>					
+			<script src="js/easing.min.js"></script>			
+		<script src="js/hoverIntent.js"></script>
+		<script src="js/superfish.min.js"></script>	
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>						
+		<script src="js/jquery.nice-select.min.js"></script>					
+		<script src="js/owl.carousel.min.js"></script>							
+		<script src="js/mail-script.js"></script>	
+		<script src="js/jquery.touchSwipe.min.js"></script>
+		<script src="js/responsive_bootstrap_carousel.js"></script>
+		<script src="js/blog_slider_min.js"></script>
+		<script src="js/main.js"></script>	
+	</body>
 </html>

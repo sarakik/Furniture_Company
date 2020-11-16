@@ -6,23 +6,34 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
- public function index()
+    public function index()
 	{
 		return view('index');	
 	}
-	public function catalogue()
+	public function about()
 	{
-		return view('catalogue');	
+		return view('about');	
 	}
-	public function pricing()
+
+	public function catalog()
 	{
-		return view('pricing');	
+		return view('catalog');	
 	}
-	public function contacts()
+	public function blog_home()
 	{
-		return view('contacts');	
+		return view('blog_home');	
 	}
-	public function services()
+	public function contact()
 	{
-		return view('services');	
-	}}
+		return view('contact');	
+	}
+	public function elements()
+	{
+		return view('elements');	
+	}
+	public function elements2()
+	{
+		return view('elements2');	
+	}
+	
+}
