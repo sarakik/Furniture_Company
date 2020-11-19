@@ -14,6 +14,8 @@
 			    <label for="name">Name:</label>
 			    <input type="Text" class="form-control" placeholder="Enter name" id="name" name="name" value="{{$section->name}}">
 			  </div>
+			   </div>
+               
 			  
 			  
 			  <button type="submit" class="btn btn-primary">Submit

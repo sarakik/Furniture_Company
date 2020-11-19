@@ -8,11 +8,11 @@
                 <div class="card-header">Add Image</div>
 
                 <div class="card-body">
-                   <form action="{{route('store_gallery')}}" method="POST">
+                   <form action="{{route('store_gallery')}}" method="POST" enctype="multipart/form-data">
                     @csrf
               <div class="form-group">
                 <label for="name">Image:</label>
-                <input type="Text" class="form-control" placeholder="Enter name" id="name" name="name">
+                <input type="file" class="form-control" id="name" name="name">
               </div>
                
                <div class="form-group">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Section;
+//use App\Items;
 class SectionController extends Controller
 {
    public function add(){

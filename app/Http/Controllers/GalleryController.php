@@ -13,8 +13,13 @@ class GalleryController extends Controller
     }
     public function store(Request $Request){
        $gallery = new Gallery;
-       $gallery->name = $Request->name;
+       
        $gallery->item_id = $Request->item_id;
+       if(isset($request->name)){
+       $image_name = rand().time(). '.' .$request->name->getClientOriginalExtension();
+       $gallery->name = $image_name;
+       $request->name->move('upload', $image_name);
+     }
        $gallery->save(); 
     	return back();
     }
