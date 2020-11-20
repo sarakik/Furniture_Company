@@ -13,6 +13,7 @@
 						      <tr>
 						        <th>#ID</th>
 						        <th>Name</th>
+						    
 						        <th>Price</th>
 						        <th>Control</th>
 						      </tr>

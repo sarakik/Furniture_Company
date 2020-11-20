@@ -67,10 +67,10 @@
 				          <li><a href="{{route('catalog')}}">Catalog</a></li>
 				          <li class="menu-has-children"><a href="">Sections</a>
 				            <ul>
-				            	  <li><a href="{{route('elements2')}}">Living Room</a></li>					
-				            	  <li><a href="{{route('elements')}}">Bed Room</a></li>	
-				            	  <li><a href="{{route('elements')}}">sofa</a></li>	
-				            	  <li><a href="{{route('elements')}}">Kitchen</a></li>	
+				            	  <li><a href="{{route('living_room')}}">Living Room</a></li>					
+				            	  <li><a href="{{route('bed_room')}}">Bed Room</a></li>	
+				            	  <li><a href="{{route('sofa')}}">sofa</a></li>	
+				            	  <li><a href="{{route('kitchen')}}">Kitchen</a></li>	
 				            	  	
 				            	                  		
 				            </ul>

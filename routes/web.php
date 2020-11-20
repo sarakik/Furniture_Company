@@ -14,8 +14,10 @@ Route::get('/','PageController@index')->name('index');
 Route::get('/about','PageController@about')->name('about');
 Route::get('/catalog','PageController@catalog')->name('catalog');
 Route::get('/contact','PageController@contact')->name('contact');
-Route::get('/elements','PageController@elements')->name('elements');
-Route::get('/elements2','PageController@elements2')->name('elements2');
+Route::get('/bed_room','PageController@bed_room')->name('bed_room');
+Route::get('/sofa','PageController@sofa')->name('sofa');
+Route::get('/kitchen','PageController@kitchen')->name('kitchen');
+Route::get('/living_room','PageController@living_room')->name('living_room');
 Route::get('/blog_home','PageController@blog_home')->name('blog_home');
 
 Auth::routes();

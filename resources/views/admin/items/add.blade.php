@@ -8,11 +8,25 @@
                 <div class="card-header">Item</div>
 
                 <div class="card-body">
-                   <form action="{{route('store_item')}}" method="POST">
+                   <form action="{{route('store_item')}}" method="POST" enctype="multipart/form-data">
                     @csrf
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="Text" class="form-control" placeholder="Enter name" id="name" name="name">
+              </div>
+              <div class="form-group">
+                <label for="section_id">Color:</label>
+                <select class="form-control" name="option_id">
+                  @foreach($options as $option)
+                    <option value="{{$option->id}}">
+                      {{$option->name}}
+                    </option>
+                    @endforeach
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="image">Image:</label>
+                <input type="file" class="form-control" id="image" name="image">
               </div>
                <div class="form-group" >
                 <label for="discription">Description:</label>

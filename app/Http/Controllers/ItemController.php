@@ -6,20 +6,32 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Items;
 use App\Section;
+use App\Option;
 class ItemController extends Controller
 {
 public function add(){
       $sections = Section::all();
-    	return view('admin.items.add', compact('sections'));
+      $options = Option::all();
+    	return view('admin.items.add', compact('sections'),compact('options'));
     }
     public function store(Request $Request){
        $item = new Items;
        $item->name = $Request->name;
+       $item->option_id = $Request->option_id;
+
+        //image 
+      if(isset($Request->image)){
+       $image_name = rand(). '.' .$Request->image->getClientOriginalExtension();
+       $item->image = $image_name;
+        $Request->image->move('upload', $image_name);
+
+       }
        $item->description = $Request->description;
        $item->price = $Request->price;
        $item->section_id = $Request->section_id;
 
-       $item->save(); 
+       $item->save();
+ 
     	return back();
     }
     public function all(){

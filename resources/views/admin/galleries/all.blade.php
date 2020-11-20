@@ -21,7 +21,7 @@
 						   @foreach($galleries as $gallery)
 						      <tr>
 						        <td>{{$gallery->id}}</td>
-						        <td>{{$gallery->name}}</td>
+						        <td>{{$gallery->image}}</td>
 						        
 						        <td>
 						        	<a href="/galleries/edit/{{$gallery->id}}" class="btn btn-success">Edit</a>

@@ -27,13 +27,21 @@ class PageController extends Controller
 	{
 		return view('contact');	
 	}
-	public function elements()
+	public function bed_room()
 	{
-		return view('elements');	
+		return view('bed_room');	
 	}
-	public function elements2()
+	public function living_room()
 	{
-		return view('elements2');	
+		return view('living_room');	
+	}
+	public function sofa()
+	{
+		return view('sofa');	
+	}
+	public function kitchen()
+	{
+		return view('kitchen');	
 	}
 	
 }

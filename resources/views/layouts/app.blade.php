@@ -44,6 +44,17 @@
                                 
                               </div>
                             </li>
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Color
+                              </a>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{route('add_option')}}">Add Option</a> 
+                                <a class="dropdown-item" href="{{route('all_options')}}">All Options</a>
+                                
+                              </div>
+                            </li>
                        <!-- Dropdown -->
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -55,17 +66,7 @@
                                 
                               </div>
                             </li>
-                            <!-- Dropdown -->
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Option'color'
-                              </a>
-                              <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{route('add_option')}}">Add Option</a> 
-                                <a class="dropdown-item" href="{{route('all_options')}}">All Options</a>
-                                
-                              </div>
-                            </li>
+                            
                             <!-- Dropdown -->
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">

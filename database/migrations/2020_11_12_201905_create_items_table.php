@@ -16,6 +16,9 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id');
              $table->string('name')->nullable();
+             $table->bigInteger('option_id')->unsigned()->nullable();
+              $table->foreign('option_id')->references('id')->on('options')->OnDelete('cascade');
+              $table->string('image')->nullable();
              $table->text('description')->nullable();
               $table->double('price')->nullable();
                $table->boolean('is_available')->nullable()->default(0);

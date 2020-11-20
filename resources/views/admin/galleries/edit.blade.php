@@ -12,7 +12,7 @@
                    	@csrf
 			  <div class="form-group">
 			    <label for="name">Image:</label>
-			    <input type="Text" class="form-control" placeholder="Enter name" id="name" name="name" value="{{$gallery->name}}">
+			    <input type="file" class="form-control"  id="image" name="image" value="{{$gallery->name}}">
 			  </div>
 			  
 			  

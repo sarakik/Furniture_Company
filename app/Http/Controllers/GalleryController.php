@@ -9,16 +9,18 @@ use App\Items;
 class GalleryController extends Controller
 {
     public function add(){
-    	return view('admin.galleries.add');
+      $items = Items::all();
+    	return view('admin.galleries.add',compact('items'));
     }
     public function store(Request $Request){
        $gallery = new Gallery;
        
        $gallery->item_id = $Request->item_id;
-       if(isset($request->name)){
-       $image_name = rand().time(). '.' .$request->name->getClientOriginalExtension();
+       //image 
+      if(isset($Request->name)){
+       $image_name = rand(). '.' .$Request->name->getClientOriginalExtension();
        $gallery->name = $image_name;
-       $request->name->move('upload', $image_name);
+       $Request->name->move('upload', $image_name);
      }
        $gallery->save(); 
     	return back();

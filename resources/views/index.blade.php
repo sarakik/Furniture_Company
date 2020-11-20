@@ -14,8 +14,8 @@
 
 						<!-- Slide Text Layer -->
 						<div class="fw_al_002_slide">
-							<h1><span>Amazing Furniture </span>With Pink Dream</h1>
-							<p>Home to some of the most luxurious and beautiful private island resorts (most featuring overwater bungalows and suites),<br> the Maldives offers the ultimate setting for a dream vacation, honeymoon or family escape.</p>
+							<h1><span>DREAM </span>FURNTURE</h1>
+							<p>Home to some of the most amazing and beautiful Fruniture ,<br>Furniture that provides comfort for family and friends.</p>
 						</div>
 					</div>
 					<!-- End of Slide -->
@@ -28,7 +28,8 @@
 
 						<!-- Slide Text Layer -->
 						<div class="fw_al_002_slide">
-							<h1><span>Amazing Furniture </span>With Pink Dream</h1>							<p>Home to some of the most luxurious and beautiful private island resorts (most featuring overwater bungalows and suites),<br> the Maldives offers the ultimate setting for a dream vacation, honeymoon or family escape.</p>
+							<h1><span>DREAM </span>FURNTURE</h1>
+							<p>Home to some of the most amazing and beautiful Fruniture ,<br>Furniture that provides comfort for family and friends.</p>
 							</div>
 					</div>
 					<!-- End of Slide -->
@@ -41,8 +42,8 @@
 
 						<!-- Slide Text Layer -->
 						<div class="fw_al_002_slide">
-							<h1><span>Amazing Furniture </span>With Pink Dream</h1>
-							<p>Home to some of the most luxurious and beautiful private island resorts (most featuring overwater bungalows and suites),<br> the Maldives offers the ultimate setting for a dream vacation, honeymoon or family escape.</p>
+							<h1><span>DREAM </span>FURNTURE</h1>
+							<p>Home to some of the most amazing and beautiful Fruniture ,<br>Furniture that provides comfort for family and friends.</p>
 						</div>
 					</div>
 					<!-- End of Slide -->
